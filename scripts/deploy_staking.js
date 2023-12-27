@@ -16,7 +16,7 @@ async function main() {
     await deployer.getAddress()
   );
   console.log("Account balance:", (await deployer.getBalance()).toString());
-  const Staking = await ethers.getContractFactory("Staking");
+  const Staking = await ethers.getContractFactory("Tekiostaking");
   const staking = await Staking.deploy(
     "0x125B88E6335C3D277E24613acE3572823D7f7C2b"
   );
